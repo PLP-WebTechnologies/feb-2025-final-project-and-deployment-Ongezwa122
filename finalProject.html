@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuralGrowth - Your Agricultural Partner</title>
+    <link rel="stylesheet" href="styleF.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="logo">RuralGrowth </a>
+          <ul class="nav-links">
+            <li>
+              <a href="#home-section" class="nav-item active" data-page="home">Home</a>
+            </li>
+            <li><a href="#about-section" class="nav-item" data-page="about">About</a></li>
+            <li>
+              <a href="#contact-section" class="nav-item" data-page="contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
+      <main>
+        <section id="home-section" class="content-section active">
+          <div class="hero">
+            <h1>Welcome to RuralGrowth</h1>
+            <p>
+              Your reliable partner for bulk agricultural goods, quality seeds,
+              and fresh weekly produce.
+            </p>
+          </div>
+
+          <div class="product-categories">
+            <h2>Our Offerings</h2>
+            <div class="category-card">
+              <h3>Bulk Agricultural Goods</h3>
+              <p>High-quality produce and raw materials for businesses.</p>
+              <button class="add-to-cart-btn" data-product="bulk-goods">
+                Learn More
+              </button>
+            </div>
+            <div class="category-card">
+              <h3>Seeds & Plants for Farmers</h3>
+              <p>Premium seeds and healthy plants to boost your harvest.</p>
+              <button class="add-to-cart-btn" data-product="seeds-plants">
+                View Products
+              </button>
+            </div>
+            <div class="category-card">
+              <h3>Weekly Fresh Produce</h3>
+              <p>Farm-fresh vegetables and fruits delivered to your home.</p>
+              <button class="add-to-cart-btn" data-product="weekly-produce">
+                Shop Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured-products">
+            <h2>Featured Weekly Products</h2>
+            <div class="product-card">
+              <img
+                src="https://images.pexels.com/photos/96616/pexels-photo-96616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Fresh Tomatoes"
+              />
+              <h3>Fresh Tomatoes</h3>
+              <p>Per kg</p>
+              <span class="price">R 25.00</span>
+              <button class="add-to-cart-btn" data-product="tomatoes">
+                Add to Cart
+              </button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.pexels.com/photos/5589058/pexels-photo-5589058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=10"
+                alt="Organic Lettuce"
+              />
+              <h3>Organic Lettuce</h3>
+              <p>Per head</p>
+              <span class="price">R 15.00</span>
+              <button class="add-to-cart-btn" data-product="lettuce">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <section class="farmer-program">
+            <h2>Become a Trained Farmer</h2>
+            <p>
+              Join our program to enhance your farming skills and knowledge.
+            </p>
+            <a href="https://www.gov.za/issues/land-and-agriculture" target="_blank" class="apply-btn"
+              >Apply Now to Be a Trained Farmer</a
+            >
+          </section>
+        </section>
+
+        <section id="about-section" class="content-section">
+          <h2>About RuralGrowth</h2>
+          <p>
+            RuralGrowth is dedicated to fostering sustainable agricultural
+            practices and supporting both large-scale businesses and individual
+            farmers. We believe in the power of fresh produce and efficient
+            supply chains to strengthen communities.
+          </p>
+          <p>
+            Our commitment extends to empowering farmers through education and
+            providing access to high-quality agricultural inputs. We strive to
+            be a reliable bridge between agricultural producers and consumers,
+            promoting growth and prosperity in rural areas.
+          </p>
+        </section>
+
+        <section id="contact-section" class="content-section">
+          <h2>Contact Us</h2>
+          <p>Have questions or need assistance? Reach out to us!</p>
+          <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+          <p>Email: info@ruralgrowth.com</p>
+          <p>Phone: +27 12 345 6789</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 RuralGrowth. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+        function bulk() {
+          let Name = prompt("what is your Name?");
+          let email = prompt("what is your email adress?");
+          let Product = prompt("what products do you want to buy?");
+          
+          alert(
+            "Welcome to RuralGrowth! " +
+              Name +
+              " " +
+              "your order is placed" +
+              "" +
+              "delivery will be in 7 days or less for these product/s -" +
+                " " +
+              Product
+          );
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", bulk);
+      </script>
+    <script src="JavaF.js"></script>
+  </body>
+</html>
